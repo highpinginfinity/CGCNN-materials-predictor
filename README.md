@@ -1,4 +1,4 @@
-# Structure Property Correlations in Functional Materials
+# Crystal Graph Convolutional Neural Networks (CGCNN)
 
 A modernized, lightweight implementation of Crystal Graph Convolutional Neural Networks (CGCNN). This toolkit is designed to predict material properties directly from crystal structures by mapping crystallographic data into mathematical graphs.
 
@@ -28,8 +28,10 @@ Create a folder (e.g., `data/`) containing:
 Train the network on your customized dataset:
 ```bash
 python main.py --mode train --data_dir ./data
+```
 
 ### 3. Predict properties
 Run inference on new, unseen crystal structures using your trained weights:
 ```bash
 python main.py --mode predict --data_dir ./data --weights cgcnn_weights.pth
+```
